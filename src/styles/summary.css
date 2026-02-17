@@ -1,0 +1,32 @@
+.summary-box {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #020617;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+}
+
+.summary-box h2 {
+  margin-top: 0;
+  font-size: 26px;
+}
+
+.summary-box h3 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.summary-box p {
+  line-height: 1.7;
+  color: #e5e7eb;
+}
+
+.summary-box ul {
+  padding-left: 20px;
+}
+
+.summary-box li {
+  margin-bottom: 8px;
+  color: #9ca3af;
+}

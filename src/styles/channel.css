@@ -1,0 +1,24 @@
+.channel-card {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #020617;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+}
+
+.channel-card h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.channel-card p {
+  margin: 10px 0 20px;
+  color: #9ca3af;
+}
+
+.channel-card .stats {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+}

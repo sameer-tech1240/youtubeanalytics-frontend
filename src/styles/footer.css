@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  padding: 14px 0;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+  border-top: 1px solid #222;
+  background-color: #0f0f0f;
+}
+
+.footer a {
+  color: #00e5ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  margin: 0 8px;
+  color: #555;
+}
