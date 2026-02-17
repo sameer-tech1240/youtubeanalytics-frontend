@@ -106,7 +106,7 @@ src/services/api.js
 
 ## Author
 
-Developed by Sameer (Mohammad Arshad)
-Frontend and Backend Developer
+Developed by Sameer Siddiqui
+Backend Developer – Java and Spring Boot
 
-LinkedIn: [https://www.linkedin.com/](https://www.linkedin.com/)
+LinkedIn: https://www.linkedin.com/in/sameer-s-653b7b265/
