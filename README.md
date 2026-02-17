@@ -107,6 +107,6 @@ src/services/api.js
 ## Author
 
 Developed by Sameer Siddiqui
-Backend Developer – Java and Spring Boot
+Full Stack Developer – Java and Spring Boot and React
 
 LinkedIn: https://www.linkedin.com/in/sameer-s-653b7b265/
