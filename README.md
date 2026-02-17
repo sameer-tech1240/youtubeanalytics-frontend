@@ -1,16 +1,112 @@
-# React + Vite
+# YouTube Analyzer & AI Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend UI for the YouTube Analyzer & AI Platform.
 
-Currently, two official plugins are available:
+It connects with the Spring Boot backend to provide:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Channel analytics interface
+* Latest videos viewer
+* AI summary generator
+* Clean and responsive user interface
 
-## React Compiler
+## Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React (Vite)
+* JavaScript (ES6)
+* CSS (Custom styling)
+* Fetch API
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Channel Analyzer UI
+
+* Accepts a YouTube channel link
+* Displays:
+
+  * Channel Name
+  * Subscribers Count
+  * Total Views
+  * Total Videos
+
+### 2. Latest Videos Section
+
+* Grid-based layout
+* Displays:
+
+  * Video thumbnail
+  * Title
+  * Basic statistics
+* Clicking a video opens it directly on YouTube
+
+### 3. AI Summary UI
+
+* Accepts any URL input
+* Displays:
+
+  * Summary
+  * Key Points
+
+### 4. Clean UI Design
+
+* Fully responsive layout
+* Works on both mobile and desktop
+* Card-based structured UI with clean styling
+
+## Project Structure
+
+src/
+ ├── components/
+ │   ├── Header.jsx
+ │   ├── Footer.jsx
+ │   ├── ModeToggle.jsx
+ │   ├── AnalyzeForm.jsx
+ │   ├── ChannelCard.jsx
+ │   ├── VideoGrid.jsx
+ │   ├── SummaryBox.jsx
+ │
+ ├── pages/
+ │   └── Home.jsx
+ │
+ ├── services/
+ │   └── api.js
+ │
+ ├── styles/
+ │   ├── form.css
+ │   ├── video.css
+ │   └── channel.css
+
+
+## Setup Instructions
+
+### 1. Clone Repository
+
+git clone https://github.com/your-username/youtube-frontend.git
+cd youtube-frontend
+
+### 2. Install Dependencies
+
+npm install
+
+### 3. Run the Application
+
+npm run dev
+
+Application runs on:
+http://localhost:5173
+
+## Backend Connection
+
+Ensure that the backend service is running at:
+
+http://localhost:8888
+
+Verify the API base URL inside:
+
+src/services/api.js
+
+## Author
+
+Developed by Sameer (Mohammad Arshad)
+Frontend and Backend Developer
+
+LinkedIn: [https://www.linkedin.com/](https://www.linkedin.com/)
