@@ -24,7 +24,14 @@
 // };
 
 
-const BASE = "http://192.168.1.117:8888";
+// Dynamic BASE URL (local + production)
+
+const BASE =
+  window.location.hostname === "localhost"
+    ? "http://localhost:8888"
+    : "https://analyticsyt.onrender.com";
+
+// ---------------- API CALLS ----------------
 
 export const analyzeChannel = async (input) => {
   const res = await fetch(`${BASE}/api/youtube/analyze`, {
@@ -32,11 +39,15 @@ export const analyzeChannel = async (input) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ channelInput: input }),
   });
+
+  if (!res.ok) throw new Error("Analyze API failed");
   return res.json();
 };
 
 export const fetchVideos = async (channelId) => {
   const res = await fetch(`${BASE}/api/youtube/${channelId}/videos`);
+
+  if (!res.ok) throw new Error("Fetch videos failed");
   return res.json();
 };
 
@@ -46,6 +57,9 @@ export const summarizeUrl = async (url) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ url }),
   });
+
+  if (!res.ok) throw new Error("Summarize API failed");
   return res.json();
 };
+
 
